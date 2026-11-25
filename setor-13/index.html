@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setor 13 — Contenção</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <main class="game">
+    <div class="screen" id="screen">
+      <canvas id="view" width="480" height="270" aria-label="Visão em primeira pessoa"></canvas>
+      <div class="overlay" id="overlay">
+        <section class="panel">
+          <p class="label">ESTAÇÃO SUBTERRÂNEA</p>
+          <h1 id="title">SETOR 13</h1>
+          <p id="brief">Desative os drones de contenção e alcance a saída verde.</p>
+          <button id="start">Iniciar missão</button>
+          <p class="keys">WASD para mover · Mouse ou ← → para mirar<br> Clique ou Espaço para disparar · P para pausar</p>
+        </section>
+      </div>
+    </div>
+    <div class="hud">
+      <div>VIDA <strong id="health">100</strong></div>
+      <div>CARGA <strong id="ammo">12</strong></div>
+      <div>DRONES <strong id="remaining">4</strong></div>
+      <div class="message" id="message" role="status"></div>
+    </div>
+  </main>
+</body>
+</html>
