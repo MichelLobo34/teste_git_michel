@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Órbita Velada</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <main class="arcade">
+    <header class="hud" aria-label="Placar">
+      <div>PONTOS <strong id="score">000000</strong></div>
+      <div>ONDA <strong id="wave">01</strong></div>
+      <div>VIDAS <strong id="lives">3</strong></div>
+    </header>
+    <div class="field">
+      <canvas id="field" width="420" height="520" aria-label="Campo de jogo"></canvas>
+      <section id="overlay" class="overlay" aria-labelledby="title">
+        <h1 id="title">ÓRBITA<br>VELADA</h1>
+        <p id="brief">Defenda a órbita. Destrua as formações e desvie dos mergulhos inimigos.</p>
+        <button id="start" type="button">Iniciar partida</button>
+      </section>
+    </div>
+    <footer>
+      <p class="keyboard">← → ou A/D para mover · Espaço para disparar · P para pausar</p>
+      <div class="controls">
+        <button type="button" data-key="ArrowLeft" aria-label="Mover à esquerda">◀</button>
+        <button type="button" data-key="ArrowRight" aria-label="Mover à direita">▶</button>
+        <button type="button" data-key="Space">Disparar</button>
+        <button type="button" id="pause" aria-label="Pausar">Ⅱ</button>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
