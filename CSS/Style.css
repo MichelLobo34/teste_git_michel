@@ -1,6 +1,7 @@
 body{
     align-items: center;
     background: black;
+    display: flex;
 
 }
 img{
