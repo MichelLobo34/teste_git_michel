@@ -1,9 +1,12 @@
 body{
     align-items: center;
     background: black;
-    display: flex;
+    
 
 }
 img{
-    width: 500px;
+    display: block;
+    margin: 350px;
+    justify-content: center;
+    align-items: center;
 }
